@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Zomato Rating Prediction</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  
+</head>
+
+<body>
+
+
+
+<style>
+body {
+  background-image: url("https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cmVzdGF1cmFudHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80");
+  background-position: 200%;
+  background-size: cover;
+}
+</style>
+
+
+
+ <div class="login">
+	<h1>Predict Restaurant Ratings</h1>
+
+     <!-- Main Input For Receiving Query to our ML -->
+    <form action="{{ url_for('predict')}}"method="post">
+    	  <input type="text" name="Online Order" placeholder="Order Online, 0-1 " required="required" />
+        <input type="text" name="Book Table" placeholder="Book Table, 0-1 " required="required" />
+		    <input type="text" name="Votes" placeholder="Votes 0-16832 " required="required" />
+        <input type="text" name="Location" placeholder="Location 0-87" required="required" />
+        <input type="text" name="Restaurant Type" placeholder="Restaurant Type 0-72 " required="required" />
+        <input type="text" name="Cuisines" placeholder="Cuisines 0-1680 " required="required" />
+        <input type="text" name="Cost" placeholder="Cost 40-6000" required="required" />
+        <input type="text" name="Menu Item" placeholder="Menu Item 0-5047 " required="required" />
+
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+    </form>
+
+   <br>
+   <br>
+   {{ prediction_text }}
+
+ </div>
+
+
+</body>
+</html>

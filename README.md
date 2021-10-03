@@ -8,3 +8,8 @@ rest_type
 cuisines
 cost
 menu_item
+
+
+
+# FrontUI
+![alt tag](https://github.com/Vinayak-HUB1/Deployment/blob/main/Screenshot%202021-09-23%20154654.jpg)

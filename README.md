@@ -1,5 +1,7 @@
+# Restaurant Rating Prediction
 
-# a complete end to end machine learning project to predict the rating of restaurant based on following features.
+
+# Problem Statement - to predict the rating of restaurant based on following features.
 online_order
 book_table
 votes

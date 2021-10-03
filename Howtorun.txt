@@ -1,0 +1,4 @@
+1.create new enviroment with python 3.7.0
+2.install all the requirements.txt file .
+3.unzip Model.rar
+4.run app.py
